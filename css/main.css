@@ -55,7 +55,7 @@ body {
     flex-wrap: wrap;
 }
 .logo img {
-    height: 64px;
+    height: 128px;
     width: auto;
 }
 .theme-switcher {
