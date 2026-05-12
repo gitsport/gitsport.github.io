@@ -45,3 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
         renderAlgorithmCards();
     };
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Блокируем контекстное меню на всех картинках
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            return false;
+        });
+    });
+});
