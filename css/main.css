@@ -213,3 +213,26 @@ body {
         gap: 1rem;
     }
 }
+
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+.logo-link:focus,
+.logo-link:active,
+.logo-link:visited {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+.logo__img {
+    display: block;
+    height: 32px;
+    width: auto;
+    transition: opacity 0.2s;
+}

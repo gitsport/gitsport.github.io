@@ -56,24 +56,24 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="header__container">
-                <div class="logo" id="logo">
-                    <img src="/assets/logo/logo_EN.svg" alt="GitSport" class="logo__img" id="logoImg">
-                </div>
-                <div class="theme-switcher">
-                    <button class="theme-btn" data-theme="system">Системная</button>
-                    <button class="theme-btn" data-theme="light">Светлая</button>
-                    <button class="theme-btn" data-theme="dark">Тёмная</button>
-                </div>
-                <div class="lang-selector">
-                    <button class="lang-btn" id="langBtn">
-                        <img src="/assets/flags/ru.png" alt="ru" class="flag-icon" id="currentFlag">
-                        <span id="currentLangName">Русский</span>
-                    </button>
-                    <div class="lang-dropdown" id="langDropdown"></div>
-                </div>
-            </div>
-        </header>
+			<div class="header__container">
+				<a href="/" class="logo-link" id="logoLink">
+					<img src="/assets/logo/logo_EN.svg" alt="GitSport" class="logo__img" id="logoImg">
+				</a>
+				<div class="theme-switcher">
+					<button class="theme-btn" data-theme="system">Системная</button>
+					<button class="theme-btn" data-theme="light">Светлая</button>
+					<button class="theme-btn" data-theme="dark">Тёмная</button>
+				</div>
+				<div class="lang-selector">
+					<button class="lang-btn" id="langBtn">
+						<img src="/assets/flags/ru.png" alt="ru" class="flag-icon" id="currentFlag">
+						<span id="currentLangName">Русский</span>
+					</button>
+					<div class="lang-dropdown" id="langDropdown"></div>
+				</div>
+			</div>
+		</header>
         <main class="main" style="max-width: 1280px; margin: 0 auto; padding: 2rem;">
             <h1 data-i18n="useful_title">Полезные инструменты</h1>
             <div class="tools-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">

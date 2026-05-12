@@ -64,10 +64,14 @@ function updateLogoAndFlag() {
     const langData = SUPPORTED_LANGUAGES.find(l => l.code === currentLang);
     if (langData) {
         const flagPath = `/assets/flags/${langData.flag}`;
-        document.getElementById('currentFlag')?.setAttribute('src', flagPath);
-        document.getElementById('currentLangName').innerText = langData.name;
+        const flagImg = document.getElementById('currentFlag');
+        const langNameSpan = document.getElementById('currentLangName');
+        if (flagImg) flagImg.setAttribute('src', flagPath);
+        if (langNameSpan) langNameSpan.innerText = langData.name;
+        
         const logoPath = `/assets/logo/${langData.logo}`;
-        document.getElementById('logoImg')?.setAttribute('src', logoPath);
+        const logoImg = document.getElementById('logoImg');
+        if (logoImg) logoImg.setAttribute('src', logoPath);
     }
 }
 
