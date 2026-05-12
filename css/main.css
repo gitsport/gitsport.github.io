@@ -236,3 +236,20 @@ body {
     width: auto;
     transition: opacity 0.2s;
 }
+
+/* Запрет выделения и перетаскивания для всех изображений */
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: auto;  /* Чтобы клики по ссылкам с картинками работали */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Дополнительно для SVG (на всякий случай) */
+svg {
+    user-select: none;
+    -webkit-user-drag: none;
+}
