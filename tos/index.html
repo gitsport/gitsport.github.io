@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Условия использования - GitSport</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Минимальный набор favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Условия использования сервиса GitSport">
+    <meta property="og:title" content="Условия использования">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gitsport.github.io/tos">
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/themes.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__container">
+                <div class="logo"><img src="/assets/logo/logo_EN.svg" alt="GitSport" class="logo__img" id="logoImg"></div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" data-theme="system">Системная</button>
+                    <button class="theme-btn" data-theme="light">Светлая</button>
+                    <button class="theme-btn" data-theme="dark">Тёмная</button>
+                </div>
+                <div class="lang-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <img src="/assets/flags/ru.png" alt="ru" class="flag-icon" id="currentFlag">
+                        <span id="currentLangName">Русский</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown"></div>
+                </div>
+            </div>
+        </header>
+        <main style="max-width: 900px; margin: 2rem auto; padding: 2rem;">
+            <h1>Условия использования</h1>
+            <p><strong>Дата последнего обновления:</strong> 12 мая 2026 г.</p>
+            <h2>1. Общие положения</h2>
+            <p>1.1. Настоящие Условия использования (далее — «Условия») регулируют отношения между администрацией сайта GitSport (далее — «Администрация») и пользователем сервиса.</p>
+            <p>1.2. Используя сайт https://gitsport.github.io (далее — «Сайт»), вы соглашаетесь с данными Условиями.</p>
+            <h2>2. Права и обязанности пользователя</h2>
+            <p>2.1. Пользователь обязуется использовать Сайт только в законных целях, не нарушать права третьих лиц.</p>
+            <p>2.2. Запрещается размещать вредоносный код, пытаться взломать или нарушить работу Сайта.</p>
+            <h2>3. Интеллектуальная собственность</h2>
+            <p>3.1. Все материалы Сайта (тексты, графика, логотипы, код) являются собственностью Администрации или используются на законных основаниях.</p>
+            <h2>4. Отказ от ответственности</h2>
+            <p>4.1. Администрация не несёт ответственности за возможные убытки, возникшие в результате использования инструментов Сайта (генераторы, калькуляторы и т.д.).</p>
+            <p>4.2. Информация предоставляется «как есть» без каких-либо гарантий.</p>
+            <h2>5. Изменение условий</h2>
+            <p>5.1. Администрация оставляет за собой право изменять Условия в любое время без предварительного уведомления.</p>
+            <h2>6. Контакты</h2>
+            <p>По всем вопросам: <a href="mailto:admin@gitsport.github.io">admin@gitsport.github.io</a></p>
+        </main>
+        <footer class="footer">
+            <div class="footer__links">
+                <a href="/privacy">Политика конфиденциальности</a>
+                <a href="/tos">Условия использования</a>
+                <a href="/useful">Полезные инструменты</a>
+            </div>
+            <div class="footer__copyright">© 2026 GitSport</div>
+        </footer>
+    </div>
+    <script>
+        // минимальная инициализация тем и языка
+        if (typeof initThemes === 'function') initThemes();
+        if (typeof initLanguageSelector === 'function') initLanguageSelector();
+    </script>
+</body>
+</html>

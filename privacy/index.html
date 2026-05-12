@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности - GitSport</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <meta name="description" content="Политика обработки персональных данных GitSport">
+    <meta property="og:title" content="Политика конфиденциальности">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gitsport.github.io/privacy">
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/themes.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__container">
+                <div class="logo"><img src="/assets/logo/logo_EN.svg" alt="GitSport" class="logo__img" id="logoImg"></div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" data-theme="system">Системная</button>
+                    <button class="theme-btn" data-theme="light">Светлая</button>
+                    <button class="theme-btn" data-theme="dark">Тёмная</button>
+                </div>
+                <div class="lang-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <img src="/assets/flags/ru.png" alt="ru" class="flag-icon" id="currentFlag">
+                        <span id="currentLangName">Русский</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown"></div>
+                </div>
+            </div>
+        </header>
+        <main style="max-width: 900px; margin: 2rem auto; padding: 2rem;">
+            <h1>Политика конфиденциальности</h1>
+            <p><strong>Версия от 12.05.2026</strong></p>
+            <h2>1. Общие положения</h2>
+            <p>Настоящая Политика конфиденциальности описывает, как GitSport собирает, использует и защищает информацию, полученную от пользователей сайта https://gitsport.github.io.</p>
+            <h2>2. Какие данные мы собираем</h2>
+            <p>2.1. Мы не собираем личные данные без вашего согласия. Вы можете использовать все инструменты анонимно.</p>
+            <p>2.2. Как и многие сайты, мы можем собирать обезличенную техническую информацию (тип браузера, язык, реферер) для улучшения работы сервиса.</p>
+            <h2>3. Использование файлов cookie</h2>
+            <p>Сайт использует cookie для хранения выбранной темы и языковых предпочтений. Вы можете отключить cookie в настройках браузера, но некоторые функции могут работать некорректно.</p>
+            <h2>4. Передача данных третьим лицам</h2>
+            <p>Мы не передаём ваши данные третьим лицам, за исключением случаев, предусмотренных законодательством.</p>
+            <h2>5. Безопасность</h2>
+            <p>Мы принимаем разумные меры для защиты информации, однако передача данных через Интернет не может быть абсолютно безопасной.</p>
+            <h2>6. Ссылки на сторонние ресурсы</h2>
+            <p>Сайт может содержать ссылки на другие сайты. Мы не несём ответственности за их политику конфиденциальности.</p>
+            <h2>7. Изменения в Политике</h2>
+            <p>Мы можем периодически обновлять данный документ. Изменения вступают в силу с момента публикации.</p>
+            <h2>8. Контакты</h2>
+            <p>По вопросам конфиденциальности: <a href="mailto:privacy@gitsport.github.io">privacy@gitsport.github.io</a></p>
+        </main>
+        <footer class="footer">
+            <div class="footer__links">
+                <a href="/privacy">Политика конфиденциальности</a>
+                <a href="/tos">Условия использования</a>
+                <a href="/useful">Полезные инструменты</a>
+            </div>
+            <div class="footer__copyright">© 2026 GitSport</div>
+        </footer>
+    </div>
+    <script>
+        if (typeof initThemes === 'function') initThemes();
+        if (typeof initLanguageSelector === 'function') initLanguageSelector();
+    </script>
+</body>
+</html>

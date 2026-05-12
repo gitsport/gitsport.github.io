@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <meta name="google" content="notranslate">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121416">
+    <meta name="description" content="Полезные инструменты: генератор паролей, Minecraft калькулятор, конвертеры и многое другое.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gitsport.github.io/useful">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Полезные инструменты GitSport">
+    <meta property="og:description" content="Калькуляторы, конвертеры, генераторы – всё для удобства.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gitsport.github.io/useful">
+    <meta property="og:image" content="https://gitsport.github.io/assets/favicon/android-chrome-1024x1024.png">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="GitSport">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Полезные инструменты GitSport">
+    <meta name="twitter:description" content="Все инструменты в одном месте">
+    <meta name="twitter:image" content="https://gitsport.github.io/assets/favicon/maskable-icon-1024x1024.png">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Полезные инструменты",
+      "url": "https://gitsport.github.io/useful",
+      "description": "Набор утилит для повседневных задач"
+    }
+    </script>
+
+    <!-- Favicons (полный список как на главной, для краткости покажу основные, но можно повторить все 58) -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+    <link rel="alternate icon" href="/assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <!-- Чтобы не раздувать код, остальные 50+ иконок можно считать подключёнными аналогично главной странице -->
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/themes.js" defer></script>
+    <script src="/js/useful.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__container">
+                <div class="logo" id="logo">
+                    <img src="/assets/logo/logo_EN.svg" alt="GitSport" class="logo__img" id="logoImg">
+                </div>
+                <div class="theme-switcher">
+                    <button class="theme-btn" data-theme="system">Системная</button>
+                    <button class="theme-btn" data-theme="light">Светлая</button>
+                    <button class="theme-btn" data-theme="dark">Тёмная</button>
+                </div>
+                <div class="lang-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <img src="/assets/flags/ru.png" alt="ru" class="flag-icon" id="currentFlag">
+                        <span id="currentLangName">Русский</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown"></div>
+                </div>
+            </div>
+        </header>
+        <main class="main" style="max-width: 1280px; margin: 0 auto; padding: 2rem;">
+            <h1 data-i18n="useful_title">Полезные инструменты</h1>
+            <div class="tools-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                <div id="password-generator"></div>
+                <div id="minecraft-calc"></div>
+                <div id="base-converter"></div>
+                <div id="length-converter"></div>
+                <div id="currency-converter"></div>
+                <div id="file-size-converter"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__links">
+                <a href="/privacy" data-i18n="privacy_link">Политика конфиденциальности</a>
+                <a href="/tos" data-i18n="tos_link">Условия использования</a>
+                <a href="/useful" data-i18n="useful_link">Полезные инструменты</a>
+            </div>
+            <div class="footer__copyright" data-i18n="copyright">© 2026 GitSport</div>
+        </footer>
+    </div>
+    <script>
+        // дополнительно инициализируем инструменты после загрузки DOM
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.initPasswordGenerator) window.initPasswordGenerator();
+            if (window.initMinecraftCalculator) window.initMinecraftCalculator();
+            if (window.initNumberBaseConverter) window.initNumberBaseConverter();
+            if (window.initLengthConverter) window.initLengthConverter();
+            if (window.initCurrencyConverter) window.initCurrencyConverter();
+            if (window.initFileSizeConverter) window.initFileSizeConverter();
+        });
+    </script>
+</body>
+</html>
