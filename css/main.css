@@ -232,7 +232,7 @@ body {
 }
 .logo__img {
     display: block;
-    height: 32px;
+    height: 72px;
     width: auto;
     transition: opacity 0.2s;
 }
